@@ -7,3 +7,17 @@ startBtn.addEventListener('click', function () {
 	startBtn.classList.add('none')
 	welcomeSub.textContent = 'Choose your first job' // Змінюємо текст елемента welcome-sub
 })
+
+// Отримуємо всі картки
+const cards1 = document.querySelectorAll('.card')
+
+// Додаємо обробник подій на кожну картку
+cards1.forEach(card => {
+	card.addEventListener('click', () => {
+		// Прибираємо клас 'choosed' з усіх карток
+		cards1.forEach(c => c.classList.remove('choosed'))
+
+		// Додаємо клас 'choosed' на поточну картку
+		card.classList.add('choosed')
+	})
+})
