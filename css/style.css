@@ -48,7 +48,7 @@ img {
 }
 
 .container {
-	min-height: 800px;
+	min-height: 650px;
 	max-width: 390px;
 }
 
@@ -60,7 +60,7 @@ img {
 }
 
 .title {
-	margin-top: 85px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -79,7 +79,7 @@ img {
 }
 
 .welcome {
-	margin-top: 40px;
+	margin-top: 15px;
 }
 
 .btn {
@@ -108,17 +108,21 @@ img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px; /* Відстань між картками */
-	margin-top: -35px;
+	margin-top: 10px;
 	transition: all 0.5s ease;
 }
 
 .card {
 	background-color: #333;
-	padding: 15px 0px;
+	padding: 20px 15px;
 	border-radius: 10px;
 	text-align: center;
 	border: 2px solid #333;
 	transition: all 0.2s ease;
+}
+
+.card.choosed {
+	border: 2px solid #dab308;
 }
 
 .card:hover {
